@@ -1,0 +1,15 @@
+<div>
+
+<h1> DEMO
+$if null demos
+    <p> There are no demos 
+$else
+    <table .table .table-responsive .table-hover>
+        <thead>
+                     <th> identificate 
+          
+        $forall Entity demoId demo <- demos
+            <tbody>
+                <tr>
+                    <td> 
+                        #{demoFieldOne demo}
